@@ -275,7 +275,7 @@ netfilter-persistent save
 netfilter-persistent reload
 
 # download script
-cd /usr/local/sbin
+cd /usr/bin/
 wget -O addssh "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/addssh.sh"
 wget -O hapus "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/hapus.sh"
 wget -O member "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/member.sh"
@@ -289,8 +289,10 @@ wget -O menu "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/menu.sh
 wget -O sshws "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/sshws.sh"
 wget -O running "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/running.sh"
 wget -O renewws "https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/renewws.sh"
-wget -O /usr/local/sbin/cekws https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/cekws.sh && chmod +x /usr/local/sbin/cekws && cd /usr/local/sbin && apt install -y dos2unix && dos2unix cekws
-wget -O /usr/local/sbin/cekusage https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/cekusage.sh && chmod +x /usr/local/sbin/cekusage && cd /usr/local/sbin && apt install -y dos2unix && dos2unix cekusage
+wget -O /usr/bin/cekws https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/cekws.sh && chmod +x /usr/local/sbin/cekws 
+wget -O /usr/bin/cekusage https://raw.githubusercontent.com/kamunikan/scwwe/main/ssh/cekusage.sh && chmod +x /usr/local/sbin/cekusage 
+apt install -y dos2unix && dos2unix cekusage
+apt install -y dos2unix && dos2unix cekws
 chmod +x addssh
 chmod +x menu
 chmod +x hapus

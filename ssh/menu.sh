@@ -1,8 +1,8 @@
 #!/bin/bash
 # Menu For Script
 # Edition : Stable Edition V1.0
-# Author  : MAULANA ADITYA
-# (C) Copyright 2022-2023 By RYUSTOREVPN
+# Author  : Yth Bagos
+# (C) Copyright 2022-2023 By BAGOESVPN
 # =========================================
 
 # // Exporting Language to UTF-8
@@ -39,7 +39,7 @@ export Server_URL="autosc.me/aio"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther="FsidVPN"
+export Auther="bagoesvpn"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -112,7 +112,7 @@ echo -e "[${GREEN}08${NC}]${RED} •${NC} Add Vless Account$NC    [${GREEN}17${N
 echo -e "[${GREEN}09${NC}]${RED} •${NC} Addd Trojan Account$NC  [${GREEN}18${NC}]${RED} • ${NC}Running $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${RED_BG}                      RyuStoreVPN PROJECT                         ${NC}"
+echo -e "${RED_BG}                      bagoesvpn PROJECT                         ${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${GREEN}CLIENT NAME${NC}    ${RED}•$NC $Name"
 echo -e "${GREEN}SCRIPT EXPIRED${NC} ${RED}•$NC $exp"
@@ -182,7 +182,7 @@ case $choosemu in
         running
     ;;
     *) # >> Wrong Select
-        echo -e "${EROR} SALAH SAYANG !!!"
+        echo -e "${EROR} SALAH CUK !!!"
         sleep 1
         menu
     ;;

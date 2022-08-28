@@ -14,11 +14,11 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y
-DOMAIN=do-ryustorevpn.my.id
+DOMAIN=myvpn-prib.cf
 sub=$(</dev/urandom tr -dc a-x1-9 | head -c2 | tr -d '\r' | tr -d '\r\n')
-SUB_DOMAIN=${sub}.do-ryustorevpn.my.id
-CF_ID=era.delfita0806@gmail.com
-CF_KEY=4978bde1191478a9375880253a9e2386009ed
+SUB_DOMAIN=${sub}.myvpn-prib.cf
+CF_ID=anfuji184@gmail.com
+CF_KEY=8700ccfd51dec7e1c3c95dd44250c7891b913
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."

@@ -185,7 +185,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCVPN Project ]-===================="
+echo "=====================-[ bagosvpn Project ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""

@@ -102,7 +102,7 @@ secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
 }
 start=$(date +%s)
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 
@@ -145,7 +145,7 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/kamunikan/scwwe/main/install/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 mkdir -p /etc/xray
@@ -157,11 +157,11 @@ echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/v2ray/domain
 echo $pp > /root/domain
 echo "IP=$pp" > /var/lib/scvpn/ipvps.conf
-wget -q "https://raw.githubusercontent.com/kamunikan/scwwe/main/install/cf.sh" && chmod +x cf.sh && ./cf.sh
-wget -q "https://raw.githubusercontent.com/kamunikan/scwwe/main/install/ssh-vpn.sh" && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-wget -q "https://raw.githubusercontent.com/kamunikan/scwwe/main/install/ins-xray.sh" && chmod +x ins-xray.sh && ./ins-xray.sh
-wget -q "https://raw.githubusercontent.com/kamunikan/scwwe/main/install/insshws.sh" && chmod +x insshws.sh && ./insshws.sh
-wget -q "https://raw.githubusercontent.com/kamunikan/scwwe/main/install/edu.sh" && chmod +x edu.sh && ./edu.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/cf.sh" && chmod +x cf.sh && ./cf.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/ssh-vpn.sh" && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/ins-xray.sh" && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/insshws.sh" && chmod +x insshws.sh && ./insshws.sh
+wget -q "https://raw.githubusercontent.com/anggradiantoro/scwwe/main/install/edu.sh" && chmod +x edu.sh && ./edu.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -200,7 +200,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCVPN Project ]-===================="
+echo "=====================-[ BAGOESBPN Project ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -243,7 +243,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Recode By SCVPN ]-==============="
+echo "===============-[ Script Recode By BAGOESVPN ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt

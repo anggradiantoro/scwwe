@@ -123,7 +123,7 @@ cat > /home/vps/public_html/ss-$user.txt <<-END
           "headers": {
             "Host": "$domain"
           },
-          "path": "/ss-ws"
+          "path": "/bgss-ws"
         }
       },
       "tag": "proxy"
@@ -224,7 +224,7 @@ cat > /home/vps/public_html/ss-$user.txt <<-END
       "streamSettings": {
         "grpcSettings": {
           "multiMode": true,
-          "serviceName": "ss-grpc"
+          "serviceName": "bgss-grpc"
         },
         "network": "grpc",
         "security": "tls",

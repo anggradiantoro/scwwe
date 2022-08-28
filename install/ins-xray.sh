@@ -33,7 +33,7 @@ sleep 1
 echo -e "[ ${green}INFO$NC ] Enable chrony"
 systemctl enable chrony
 systemctl restart chrony
-timedatectl set-timezone Asia/Kuala_Lumpur
+timedatectl set-timezone Asia/Jakarta
 sleep 1
 echo -e "[ ${green}INFO$NC ] Setting chrony tracking"
 chronyc sourcestats -v
@@ -123,7 +123,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vless"
+                "path": "/bgvless"
           }
         }
      },
@@ -142,7 +142,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vmess"
+                "path": "/bgvmess"
           }
         }
      },
@@ -162,7 +162,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/trojan-ws"
+               "path": "/bgtrojan-ws"
             }
          }
      },
@@ -183,7 +183,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
           "network": "ws",
              "wsSettings": {
-               "path": "/ss-ws"
+               "path": "/bgss-ws"
            }
         }
      },	
@@ -202,7 +202,7 @@ cat > /etc/xray/config.json << END
           "streamSettings":{
              "network": "grpc",
              "grpcSettings": {
-                "serviceName": "vless-grpc"
+                "serviceName": "bgvless-grpc"
            }
         }
      },
@@ -221,7 +221,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "grpc",
             "grpcSettings": {
-                "serviceName": "vmess-grpc"
+                "serviceName": "bgvmess-grpc"
           }
         }
      },
@@ -240,7 +240,7 @@ cat > /etc/xray/config.json << END
          "streamSettings":{
          "network": "grpc",
            "grpcSettings": {
-               "serviceName": "trojan-grpc"
+               "serviceName": "bgtrojan-grpc"
          }
       }
    },
@@ -261,7 +261,7 @@ cat > /etc/xray/config.json << END
     "streamSettings":{
      "network": "grpc",
         "grpcSettings": {
-           "serviceName": "ss-grpc"
+           "serviceName": "bgss-grpc"
           }
        }
     }	
@@ -360,7 +360,7 @@ WantedBy=multi-user.target
 EOF
 cat > /etc/systemd/system/runn.service <<EOF
 [Unit]
-Description=Mampus-Anjeng
+Description=Sabar-Kawan
 After=network.target
 
 [Service]

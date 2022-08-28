@@ -23,13 +23,13 @@ echo "Progress..." | lolcat
 sleep 3
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-tls https://raw.githubusercontent.com/kamunikan/scwwe/main/ws/ws-tls.py
+wget -q -O /usr/local/bin/ws-tls https://raw.githubusercontent.com/anggradiantoro/scwwe/main/ws/ws-tls.py
 chmod +x /usr/local/bin/ws-tls
 
 # Installing Service
 cat > /etc/systemd/system/ws-tls.service << END
 [Unit]
-Description=Python Proxy Mod By geovpn
+Description=Python Proxy Mod By bagoesvpn
 Documentation=https://t.me/anzclan
 After=network.target nss-lookup.target
 
@@ -57,7 +57,7 @@ chmod +x /usr/local/bin/ws-nontls
 # Installing Service
 cat > /etc/systemd/system/ws-nontls.service << END
 [Unit]
-Description=Python Proxy Mod By geovpn
+Description=Python Proxy Mod By bagoesvpn
 Documentation=https://t.me/anzclan
 After=network.target nss-lookup.target
 
@@ -85,7 +85,7 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By geovpn
+Description=Python Proxy Mod By bagoesvpn
 Documentation=https://t.me/anzclan
 After=network.target nss-lookup.target
 

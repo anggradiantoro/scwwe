@@ -86,7 +86,7 @@ chmod +x /usr/local/bin/ws-ovpn
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
 Description=Python Proxy Mod By bagoesvpn
-Documentation=https://t.me/anzclan
+Documentation=https://t.me/bagoesvpn
 After=network.target nss-lookup.target
 
 [Service]

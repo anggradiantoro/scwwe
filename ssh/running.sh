@@ -1,8 +1,8 @@
 #!/bin/bash
 # Welcome Information
 # Edition : Stable Edition V1.0
-# Auther  : MAULANA ADITYA
-# (C) Copyright 2022-2023 By RYUSTOREVPN
+# Auther  : Yth Bagos
+# (C) Copyright 2022-2023 By BAGOESVPN
 # =========================================
 
 # // Exporting Language to UTF-8
@@ -178,6 +178,6 @@ echo -e "Vmess WS/GRPC       = $status_ss"
 echo -e "Vless WS/GRPC       = $status_ss"
 echo -e "Trojan WS/GRPC      = $status_ss"
 echo -e ""
-echo -e "${RED_BG}                         RyuStoreVPN                      ${NC}"
+echo -e "${RED_BG}                         bagoesvpn                      ${NC}"
 echo ""
 echo -e "${GREEN}Please Type Menu${NC}"
